@@ -1,2 +1,2 @@
 # vue-ts-practice
-vue tys practice
+vue typescript practice project
