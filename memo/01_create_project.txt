@@ -1,0 +1,104 @@
+【Vue Cli のプロジェクト作成】
+
+$ winpty docker-compose exec cms sh
+/app # npm -v
+6.14.7
+/app # vue --version
+@vue/cli 4.5.12
+/app # vue create vue-ts-practice
+
+
+Vue CLI v4.5.12
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Choose Vue version, Babel, TS, Router, Vuex, CSS Pre-processors, Linter
+? Choose a version of Vue.js that you want to start the project with 2.x
+? Use class-style component syntax? No
+? Use Babel alongside TypeScript (required for modern mode, auto-detected polyfills, transpiling JSX)? No
+? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): Sass/SCSS (with node-sass)
+? Pick a linter / formatter config: Standard
+? Pick additional lint features: Lint on save
+? Where do you prefer placing config for Babel, ESLint, etc.? In package.json
+? Save this as a preset for future projects? No
+? Pick the package manager to use when installing dependencies:
+
+
+Vue CLI v4.5.12
+✨  Creating project in /app/vue-ts-practice.
+⚙️  Installing CLI plugins. This might take a while...
+
+
+> yorkie@2.0.0 install /app/vue-ts-practice/node_modules/yorkie
+> node bin/install.js
+
+setting up Git hooks
+can't find .git directory, skipping Git hooks installation
+
+> ejs@2.7.4 postinstall /app/vue-ts-practice/node_modules/ejs
+> node ./postinstall.js
+
+added 1159 packages from 657 contributors and audited 1162 packages in 127.798s
+
+69 packages are looking for funding
+  run `npm fund` for details
+
+found 2 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+�  Invoking generators...
+�  Installing additional dependencies...
+
+
+> node-sass@4.14.1 install /app/vue-ts-practice/node_modules/node-sass
+> node scripts/install.js
+
+Downloading binary from https://github.com/sass/node-sass/releases/download/v4.14.1/linux_musl-x64-83_binding.node
+Download complete  ] - :
+Binary saved to /app/vue-ts-practice/node_modules/node-sass/vendor/linux_musl-x64-83/binding.node
+Caching binary to /root/.npm/node-sass/4.14.1/linux_musl-x64-83_binding.node
+
+> node-sass@4.14.1 postinstall /app/vue-ts-practice/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /app/vue-ts-practice/node_modules/node-sass/vendor/linux_musl-x64-83/binding.node
+Testing binary
+Binary is fine
+added 263 packages from 149 contributors and audited 1425 packages in 52.748s
+
+92 packages are looking for funding
+  run `npm fund` for details
+
+found 2 moderate severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+⚓  Running completion hooks...
+
+�  Generating README.md...
+
+�  Successfully created project vue-ts-practice.
+�  Get started with the following commands:
+
+【Vue Cliプロジェクト実行】
+
+ $ cd vue-ts-practice
+ $ npm run serve
+
+/app/vue-ts-practice # npm run serve
+
+> vue-ts-practice@0.1.0 serve /app/vue-ts-practice
+> vue-cli-service serve
+
+ INFO  Starting development server...
+98% after emitting CopyPlugin
+
+ DONE  Compiled successfully in 4369ms
+
+  App running at:
+  - Local:   http://localhost:8080/
+
+  It seems you are running Vue CLI inside a container.
+  Access the dev server via http://localhost:<your container's external mapped port>/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+
+Issues checking in progress...
+No issues found.
